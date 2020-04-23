@@ -52,14 +52,15 @@ $(document).ready(function(){
 		$('.navigation').css({backgroundColor: '#DFE3E6'});
 // MAIN CONTENT
 	// Step 13 Programmatically remove the vprospect, vconvert, and vretain classes from the <p>
-		$("section p").removeClass('vprospect vconvert vretain')
+		$('section p').removeClass('vprospect vconvert vretain')
 
 	// Step 14 Programmatically add the text “Chevy Dealers Association” after the word “President” client testimonials section.Programmatically add a line break after the word “President”
-		$( )
-
+		$('aside p:last').append('<br> Chevy Dealers Association');
 
 	// Step 15 Programmatically wrap the testimonial verbiage with a <q> tag
-	});// document ready closing tag
+		$("aside p:first").wrap('<q>');
+
+	}); //document ready closing tag
 </script>
 </head>
 
